@@ -18,6 +18,11 @@ from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 
 
+'''
+ETL PIPELINE(Extract, Transform, Load)
+'''
+
+
 class NetworkDataExtract(): 
   def __init__(self):
     try:
