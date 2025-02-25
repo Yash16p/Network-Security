@@ -1,0 +1,28 @@
+[ 2025-02-24 19:57:51,776] 161 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2025-02-24 19:57:52,925] 22 root - INFO - Initiating Data Ingestion
+[ 2025-02-24 19:57:52,925] 53 root - ERROR - An error occurred: NetworkSecurityException.__init__() missing 2 required positional arguments: 'error_message' and 'error_details'
+Traceback (most recent call last):
+  File "D:\Data Science\Network-Security\networksecurity\components\data_ingestion.py", line 35, in export_collection_as_dataframe
+    self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
+                      ^^^^^^^
+NameError: name 'pymongo' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Data Science\Network-Security\networksecurity\components\data_ingestion.py", line 92, in initiate_data_ingestion
+    dataframe=self.export_collection_as_dataframe()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Science\Network-Security\networksecurity\components\data_ingestion.py", line 45, in export_collection_as_dataframe
+    raise NetworkSecurityException
+TypeError: NetworkSecurityException.__init__() missing 2 required positional arguments: 'error_message' and 'error_details'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Data Science\Network-Security\main.py", line 25, in <module>
+    data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Science\Network-Security\networksecurity\components\data_ingestion.py", line 100, in initiate_data_ingestion
+    raise NetworkSecurityException
+TypeError: NetworkSecurityException.__init__() missing 2 required positional arguments: 'error_message' and 'error_details'

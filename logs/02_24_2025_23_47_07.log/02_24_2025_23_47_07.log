@@ -1,0 +1,4 @@
+[ 2025-02-24 23:47:08,513] 161 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2025-02-24 23:47:13,403] 20 root - INFO - Initiate the data ingestion
+[ 2025-02-24 23:47:13,632] 32 root - INFO - Connected to MongoDB at mongodb+srv://yash_1626:Yash123@cluster0.vw0ym.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[ 2025-02-24 23:47:13,633] 36 root - INFO - Accessing collection NetworkData in database KRISHAI
